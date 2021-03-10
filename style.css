@@ -1,0 +1,161 @@
+@font-face {
+    font-family: AnotherMonday;
+    src: url(/fonts/another_monday.otf);
+}
+ body {
+    text-align: center;
+    background-image: url("/img/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1 {
+    font-weight:normal;
+    font-family: AnotherMonday;
+    font-size: 2em;
+    text-align: justify;
+    color: #FFFFFF;
+    line-height: 10px;
+}
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0px;
+    font-size: 13px;
+    color: #748084;
+    
+}
+.inner-content {
+    color:#7ca3af;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+nav{
+    margin: 6% auto auto;
+    background-color:#1f2121;
+    border-radius: 13px;
+    width: 900px;
+    height: 61px;
+} 
+.menu {
+    float: right;
+    height: 40px;
+    border: 0px solid greenyellow;
+    margin-top: -16px;
+}
+.logo {
+    float: left;
+    font-size: 37px;
+    font-family: AnotherMonday;
+    text-decoration: none;
+    font-weight: bold;
+    color:#FFFFFF;
+    border: 0px solid #FFFFFF;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.logo:hover {
+    animation:animation-logo 4.5s linear infinite;
+    background: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+@keyframes animation-logo {
+    to {
+      background-position:20vw;
+    }
+}
+nav ol li{
+    display: inline-block;
+}
+ol li a { 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+li:last-child{
+    border-left: 0px solid #FFFFFF;
+    border-radius: 0 13px 13px 0;
+}
+li:hover {
+/*    background: linear-gradient(0deg, rgba(31,33,33,1) 0%, rgba(54,57,64,1) 65%, rgba(54,57,64,1) 100%);*/
+ background: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3px;
+    padding: 0px;
+    margin: auto auto auto;
+    width: 900px;
+}
+.grid-news{
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em; 
+    text-align: center; 
+    font-weight: bold;
+    border: 0px solid green;
+    line-height: 0.5px;
+    height: 200px;
+}
+.buttons {
+    width: 400px;
+    margin: 55px auto auto;
+    font-size: 17px;    
+}
+.suscribe {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 41px;
+    border-radius: 5px;
+    text-decoration: none; 
+    color: #FFFFFF;
+    background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(8,0,88,1) 100%);
+}
+.join {
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 41px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(0,65,88,1) 100%);
+}
+@keyframes slidebackground {
+    to {
+      background-position:20vw;
+    }
+}
+.grid-content {
+    background-color: #1f2121;
+    width: 610px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    border-radius: 7px;
+    padding: 20px;
+    opacity: 0.9;
+}
+.grid-sidebar-1 {
+    background-color: #1f2121;
+    width: 210px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    border-radius: 7px;
+    padding: 15px;
+    opacity: 0.9;
+}
