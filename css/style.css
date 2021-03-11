@@ -159,3 +159,24 @@ li:hover {
     padding: 15px;
     opacity: 0.9;
 }
+.grid-content-2{
+    background-color: #1f2121;
+    width: 610px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    border-radius: 7px;
+    padding: 20px;
+    opacity: 0.9;
+}
+.grid-sidebar-2 {
+    background-color: #1f2121;
+    width: 210px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    border-radius: 7px;
+    padding: 15px;
+    opacity: 0.9;
